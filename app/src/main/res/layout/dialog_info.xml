@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="16dp" android:paddingRight="16dp"
+    android:paddingTop="16dp" android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll_content1_order_success" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_centerInParent="true" android:gravity="center_vertical"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="64dp" android:layout_height="64dp"
+            android:scaleType="fitCenter" android:src="@drawable/icon_dlg_info"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginLeft="16dp" android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:textSize="24sp" android:textColor="@color/colorPurple"
+                android:text="Info" android:gravity="left"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:textSize="15sp" android:textColor="@color/colorCustomLightGrey"
+                android:text="Sorry, your address is currently\nout of our service area" android:gravity="left"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

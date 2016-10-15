@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ProgressBar
+        android:id="@+id/pb_new_order"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="false"
+        android:max="99"
+        android:progress="66"
+        android:progressDrawable="@drawable/progress_start_order" />
+
+    <RelativeLayout
+        android:id="@+id/panel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/custom_green_background">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_next_step"
+            android:background="@drawable/btn_green_selector"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_confirm"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/start_confirm"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:background="@drawable/btn_green_selector"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/panel_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/panel_bottom"
+        android:layout_below="@id/pb_new_order">
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,434 @@
+<resources>
+    <string name="app_name">UrbanWash</string>
+
+    <string name="user_name">User Name</string>
+
+    <string name="password">Password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_terms_agree">By joining us you agree to the </string>
+    <string name="login_terms_tnc">terms and conditions</string>
+
+    <string name="register_title">CREATE AN ACCOUNT</string>
+
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+
+    <string name="start_tap_title">Tap to Start</string>
+    <string name="start_confirm">Confirm</string>
+
+    <string name="new_order">New Order</string>
+    <string name="schedule_where">Where ?</string>
+    <string name="schedule_add_address">Add new location</string>
+    <string name="schedule_select_other_address">Select location</string>
+    <string name="schedule_when">When ?</string>
+    <string name="schedule_info">Note? e.g. will be handed over by maid</string>
+
+    <string name="confirm_pick_up">Pick Up</string>
+    <string name="confirm_return">Return</string>
+    <string name="confirm_locations">Locations</string>
+    <string name="confirm_services">Services</string>
+
+    <string name="kg_service_info">No worries, let us help you. Our agent will re-calculate it for you once they come to pick up the laundry.</string>
+
+    <string name="note">Note</string>
+    <string name="change">Change</string>
+
+    <string name="new_address">New Address</string>
+    <string name="new_promo">New Promo</string>
+    <string name="new_message">New Message</string>
+    <string name="new_customer">New Customer</string>
+
+    <string name="critical">Critical</string>
+    <string name="warning">Warning</string>
+    <string name="wallet_history">Wallet History</string>
+
+    <string name="name_hint">Name</string>
+    <string name="date_of_birth_hint">Date of Birth</string>
+    <string name="email_hint">e.g. someone@gmail.com</string>
+    <string name="mobile_hint">e.g. 081211154321</string>
+    <string name="password_hint">Secret Phrase</string>
+
+    <string name="password_retype_label">Re-type Password</string>
+    <string name="password_retype_hint">Re-type Secret phrase</string>
+
+    <string name="old_password_label">Old Password</string>
+    <string name="old_password_hint">Old Secret Phrase</string>
+    <string name="new_password_label">New Password</string>
+    <string name="new_password_hint">New Secret Phrase</string>
+    <string name="new_password_retype_label">Re-type New Password</string>
+    <string name="new_password_retype_hint">Re-type New Secret Phrase</string>
+
+    <string name="char_hidden">X</string>
+
+    <string name="name_label">Name</string>
+    <string name="date_of_birth_label">Date of Birth</string>
+    <string name="email_label">Email</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="password_label">Password</string>
+
+    <string name="place_detail">Tower / Floor / Unit No.</string>
+
+    <string name="status">Status</string>
+
+    <string name="transporter">Transporter</string>
+    <string name="delivery">Return:</string>
+
+    <string name="info_promo">Enjoy various limited promotion from UrbanWash</string>
+    <string name="info_reschedule">* Return date/time can still be modified in My Order after it has been submitted</string>
+
+    <string name="info">Info</string>
+    <string name="search">Search</string>
+
+    <string name="admin_pending_top_up">Process Top Up</string>
+    <string name="admin_promo">Promo</string>
+    <string name="admin_message">Message</string>
+    <string name="admin_customer">Customer</string>
+
+    <string name="report_daily">Daily Report</string>
+    <string name="report_monthly">Monthly Report</string>
+    <string name="report_yearly">Yearly Report</string>
+    <string name="report_daily_collection">Order Collection</string>
+    <string name="report_daily_delivery">Order Delivery</string>
+    <string name="report_order_place">Customer Location</string>
+    <string name="report_prospective_place">Prospective Location</string>
+
+    <string name="empty_order">Empty Order</string>
+
+    <string name="transporter_will_be_assigned">To be assigned soon</string>
+    <string name="assign_transporter_collection">Assign transporter for collection</string>
+    <string name="assign_transporter_delivery">Assign transporter for return</string>
+
+    <string name="payment_type_cash">Cash</string>
+    <string name="payment_type_wallet">Wallet</string>
+
+    <string name="grand_total_line_1">GRAND</string>
+    <string name="grand_total_line_2">TOTAL</string>
+    <string name="total">TOTAL</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_next">Next</string>
+    <string name="button_save">Save</string>
+    <string name="button_send">Send</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_apply">Apply</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_call">Call</string>
+    <string name="button_sms">SMS</string>
+
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_info">Info</string>
+
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="submit">Submit</string>
+
+    <string name="verification_code_request">Enter Verification Code</string>
+    <string name="verification_code_complete">Mobile Number Verified</string>
+
+    <string name="hint_promo_code">input promo code</string>
+    <string name="order_promo">Promo:</string>
+    <string name="promo_enter_code">Enter promo code</string>
+
+    <string name="promo_code">Code</string>
+    <string name="promo_code_hint">ABCDE</string>
+    <string name="promo_description">Description</string>
+    <string name="promo_description_hint">Promo ABCDE</string>
+    <string name="promo_value">Value</string>
+    <string name="promo_value_hint">E.g. 10.000</string>
+    <string name="promo_min_order">Min. Order</string>
+    <string name="promo_min_order_hint">E.g. 50.000</string>
+    <string name="promo_period">Period</string>
+    <string name="promo_start_date_hint">From</string>
+    <string name="promo_end_date_hint">To</string>
+
+    <string name="map_info_order_place">Total Order: %1$s \n%2$s</string>
+    <string name="map_info_prospective_place">Total Customer: %1$s \n%2$s</string>
+
+    <string name="message_content">Message</string>
+    <string name="message_content_hint">e.g. Watch out for our kick ass promo!</string>
+
+    <string name="select_delivery_date">Select Return Schedule</string>
+
+    <string name="available_times">Available Times</string>
+    <string name="available_agents">Available Agents</string>
+
+    <string name="my_order_in_progress">In Progress</string>
+    <string name="my_order_completed">Completed</string>
+
+    <string name="speed_type">Service Type</string>
+    <string name="order_speed_type_regular">Regular (4 Days)</string>
+    <string name="order_speed_type_express">Express (2 Days)</string>
+    <string name="order_speed_type_deluxe">Deluxe (1 Day)</string>
+
+    <string name="speed_type_regular">Regular</string>
+    <string name="speed_type_express">Express</string>
+    <string name="speed_type_deluxe">Deluxe</string>
+
+    <string name="speed_type_4days">4 days</string>
+    <string name="speed_type_2days">2 days</string>
+    <string name="speed_type_1day">1 day</string>
+
+    <string name="unit_kg">Kg</string>
+    <string name="unit_pc">Pc</string>
+
+    <string name="promo_type_amount">Amount</string>
+    <string name="promo_type_percentage">Percentage</string>
+
+    <string name="service_select">Laundry Types</string>
+
+    <string name="service_kg">Basic (Per Kg)\nWash + Iron</string>
+    <string name="service_piece">Premium (Per Piece)\nWash + Iron</string>
+    <string name="service_dry_clean">Dry Clean</string>
+
+    <string name="service_name_kg">Basic Laundry (Per Kg)</string>
+    <string name="service_name_piece">Premium Laundry (Per Piece)</string>
+    <string name="service_name_dry_clean">Dry Clean</string>
+
+    <string name="service_desc_kg">We\'ll pick up your items and deliver them to you\n (freshly washed, ironed, and folded).</string>
+    <string name="service_desc_piece">For your best clothes/items that need extra care,\n we\'ll handle it with the most premium treatment.</string>
+    <string name="service_desc_dry_clean">For your best clothes/items that need extra care,\n we\'ll handle it with the best dry clean treatment.</string>
+
+    <string name="place_type_home">Home</string>
+    <string name="place_type_apartment">Apartment</string>
+    <string name="place_type_office">Office</string>
+
+    <string name="product_type_kilogram">Basic</string>
+    <string name="product_type_piece">Premium</string>
+    <string name="product_type_dryclean">Dry Clean</string>
+
+    <string name="status_active">Active</string>
+    <string name="status_inactive">Inactive</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string name="double_zero">00</string>
+    <string name="separator"> - </string>
+
+    <string name="title_register">REGISTER</string>
+    <string name="title_pick_up">LAUNDRY COLLECTION</string>
+    <string name="title_select_product">SELECT SERVICE</string>
+    <string name="title_order_product">ORDER SERVICE</string>
+    <string name="title_order_confirmation">ORDER CONFIRMATION</string>
+    <string name="title_order_status">ORDER STATUS</string>
+    <string name="title_select_address">SELECT ADDRESS</string>
+    <string name="title_select_pic">SELECT TRANSPORTER</string>
+    <string name="title_new_address">NEW ADDRESS</string>
+    <string name="title_new_customer">NEW CUSTOMER</string>
+    <string name="title_promo">PROMO</string>
+    <string name="title_wallet">WALLET</string>
+    <string name="title_top_up">TOP UP CREDIT</string>
+    <string name="title_tracking_order">TRACKING ORDER</string>
+    <string name="title_update_order">UPDATE ORDER</string>
+    <string name="title_update_profile">UPDATE PROFILE</string>
+    <string name="title_wallet_history">WALLET HISTORY</string>
+    <string name="title_process_top_up">PROCESS TOP UP</string>
+    <string name="title_manage_promo">MANAGE PROMO</string>
+    <string name="title_manage_promo_new">NEW PROMO</string>
+    <string name="title_manage_promo_update">UPDATE PROMO</string>
+    <string name="title_manage_message">MESSAGES</string>
+    <string name="title_manage_message_new">NEW MESSAGE</string>
+    <string name="title_report_daily">DAILY REPORT</string>
+    <string name="title_report_monthly">MONTHLY REPORT</string>
+    <string name="title_report_yearly">YEARLY REPORT</string>
+    <string name="title_order_place">ORDER LOCATION</string>
+    <string name="title_prospective_place">PROSPECTIVE LOCATION</string>
+    <string name="title_reset_password">RESET PASSWORD</string>
+    <string name="title_change_password">CHANGE PASSWORD</string>
+    <string name="title_order_collection">ORDER COLLECTION</string>
+    <string name="title_order_delivery">ORDER DELIVERY</string>
+
+    <string name="title_register_step_1">CREATE ACCOUNT</string>
+    <string name="title_register_step_2">CREATE ACCOUNT</string>
+    <string name="title_register_step_3">YOUR ADDRESS</string>
+
+    <string name="title_my_location">MY LOCATION</string>
+
+    <string name="title_search_order">SEARCH ORDER</string>
+    <string name="title_search_customer">SEARCH CUSTOMER</string>
+
+    <string name="title_customer">CUSTOMER</string>
+
+    <string name="title_order_new_order">NEW ORDER</string>
+    <string name="title_order_assigned_for_collection">ASSIGNED FOR COLLECTION</string>
+    <string name="title_order_collection_in_progress">COLLECTION IN PROGRESSS</string>
+    <string name="title_order_collected">COLLECTED</string>
+    <string name="title_order_cleaning">CLEANING IN PROGRESS</string>
+    <string name="title_order_cleaned">CLEANED</string>
+    <string name="title_order_assigned_for_delivery">ASSIGNED FOR RETURN</string>
+    <string name="title_order_delivery_in_progress">RETURN IN PROGRESS</string>
+    <string name="title_order_completed">COMPLETED</string>
+
+    <string name="title_order_warning">WARNING</string>
+    <string name="title_order_critical">CRITICAL</string>
+
+    <string name="alert_username_required">Please enter your Username or Email address</string>
+    <string name="alert_name_required">Please enter your name</string>
+    <string name="alert_email_required">Please enter your email</string>
+    <string name="alert_mobile_required">Please enter your mobile number</string>
+    <string name="alert_password_required">Please enter your password</string>
+    <string name="alert_password_retype_required">Please re-type your password</string>
+    <string name="alert_new_password_required">Please enter your new password</string>
+    <string name="alert_new_password_retype_required">Please re-type your new password</string>
+    <string name="alert_address_required">Please enter your address</string>
+    <string name="alert_verification_code_required">Please enter Verification Code</string>
+    <string name="alert_verification_code_invalid">Invalid Verification Code</string>
+    <string name="alert_place_type_required">Select your address type</string>
+    <string name="alert_transporter_need_to_be_assigned">Please assign transporter first</string>
+    <string name="alert_no_more_data_to_be_fetched">No more record in the list</string>
+    <string name="alert_no_matching_record_found">No matching record(s) found</string>
+    <string name="alert_bank_name_required">Please enter Bank Name </string>
+    <string name="alert_acc_owner_name_required">Please enter Account Owner name</string>
+    <string name="alert_amount_required">Please enter the amount</string>
+    <string name="alert_invalid_format">Please enter amount in number format</string>
+    <string name="alert_empty_service">Please select type of laundry service</string>
+    <string name="alert_minimum_order">Minimum order is %1$s</string>
+    <string name="alert_insufficient_credit_balance">Insufficient balance, please top up your wallet</string>
+    <string name="alert_no_available_delivery_time">Unfortunately our return schedule for this date is full</string>
+    <string name="alert_message_required">Message is required</string>
+    <string name="alert_code_required">Code is required</string>
+    <string name="alert_description_required">Description is required</string>
+    <string name="alert_value_required">Value is required</string>
+    <string name="alert_min_order_required">Minimal order is required</string>
+    <string name="alert_start_date_required">Start period is required</string>
+    <string name="alert_end_date_required">End period is required</string>
+    <string name="alert_register_out_of_service_area_select_other">This location is out of our service area. You will need to select other location before you can place an order.</string>
+    <string name="alert_no_location_within_service_area">Please select location before you can place order.</string>
+    <string name="alert_out_of_service_area">This location is out of our service area.\n Please select other location.</string>
+    <string name="alert_select_delivery_date">Please select return schedule</string>
+    <string name="alert_password_retype_does_not_match">Password and re-type password don\'t match</string>
+    <string name="alert_change_password_retype_does_not_match">New password and re-type password don\'t match</string>
+    <string name="alert_search_is_empty">Please provide search criteria</string>
+    <string name="alert_reschedule_no_more">Sorry, you have exceeded allowed rescheduling limit</string>
+
+    <string name="error_general">Ouch, system error. Please contact urbanwash.id@gmail.com</string>
+    <string name="error_system_maintenance">System is under maintenance, please try again later.</string>
+    <string name="error_app_update_required">Please update app from Google Play!</string>
+    <string name="error_invalid_token">Invalid token</string>
+    <string name="error_invalid_app_cert">Application certificate is not valid!</string>
+    <string name="error_register_customer_exist">Email has been used, please use other email</string>
+    <string name="error_authentication_failed">Username or Password is incorrect</string>
+    <string name="error_failed_to_load_map">Failed to load map</string>
+    <string name="error_failed_to_connect">Failed to connect to server. Please check your internet connection</string>
+    <string name="error_location_not_within_service_area">Sorry, we haven\'t provided service to this location. We will inform you once we expand our service to this location.</string>
+    <string name="error_change_delivery_no_longer_allowed">Sorry, change on return date is no longer allowed</string>
+    <string name="error_insufficient_wallet_balance">Insufficient wallet balance</string>
+    <string name="error_no_available_time">No available time</string>
+    <string name="error_invalid_promo_code">Invalid promo code</string>
+    <string name="error_reset_password">Email is not registered</string>
+    <string name="error_change_password_old_password_incorrect">Incorrect old password</string>
+
+    <string name="confirm_submit_order">Are you ready to submit order?</string>
+    <string name="confirm_cancel_order">Do you want to cancel order?</string>
+    <string name="confirm_change_delivery">Change delivery date?</string>
+    <string name="confirm_change_payment_type">Change payment type to %1$s ?</string>
+    <string name="confirm_assign_for_collection">Assign for Collection</string>
+    <string name="confirm_collection_in_progress">Collection in Progress</string>
+    <string name="confirm_collected">Order Collected</string>
+    <string name="confirm_cleaning_in_progress">Cleaning in Progress</string>
+    <string name="confirm_cleaned">Cleaned</string>
+    <string name="confirm_assigned_for_delivery">Assigned for Delivery</string>
+    <string name="confirm_delivery_in_progress">Delivery in Progress</string>
+    <string name="confirm_complete">Complete Order</string>
+    <string name="confirm_repeat_order">Repeat Order</string>
+    <string name="confirm_submit_credit">Submit Top Up Credit</string>
+    <string name="confirm_approve_credit">Approve Top Up Credit</string>
+    <string name="confirm_cancel_registration">Cancel Registration</string>
+    <string name="confirm_update_profile">Update Profile</string>
+    <string name="confirm_cancel_update_profile">Cancel profile update</string>
+    <string name="confirm_delete_place">Are you sure to delete this place?</string>
+    <string name="confirm_save_promo">Save promo</string>
+    <string name="confirm_send_message">Send message</string>
+    <string name="confirm_logout">Sign out</string>
+    <string name="confirm_new_order">New Order</string>
+
+    <string name="ack_submit_credit">Top Up Credit has been submitted. Balance will be updated once we confirm your payment</string>
+    <string name="ack_profile_update_success">Profile has been updated</string>
+    <string name="ack_cancel_order_success">Order has been cancelled</string>
+    <string name="ack_reset_password_success">We have reset your password and sent it to your email</string>
+    <string name="ack_change_password_success">You have successfully changed your password</string>
+    <string name="ack_reschedule_n_times">You may reschedule %1$s times</string>
+    <string name="ack_reschedule_1_time">You may reschedule 1 more time</string>
+    <string name="ack_reschedule_success">You have successfully reschedule delivery of this order</string>
+
+    <string name="process_order_assigned_for_collection">Assign for Collection</string>
+    <string name="process_order_collection_in_progress">Collection in Progress</string>
+    <string name="process_order_collected">Collect Order</string>
+    <string name="process_order_cleaning_in_progress">Cleaning in Progress</string>
+    <string name="process_order_cleaned">Cleaned</string>
+    <string name="process_order_assigned_for_delivery">Assign for Delivery</string>
+    <string name="process_order_delivery_in_progress">Delivery in Progress</string>
+    <string name="process_order_completed">Complete Order</string>
+    <string name="process_order_repeat">Repeat Order</string>
+
+    <string name="order_status_new_order">Order Received</string>
+    <string name="order_status_assigned_for_collection">Assigned for Collection</string>
+    <string name="order_status_collection_in_progress">Collection in Progress</string>
+    <string name="order_status_collected">Order Collected</string>
+    <string name="order_status_cleaning_in_progress">Cleaning in Progress</string>
+    <string name="order_status_cleaned">Cleaned</string>
+    <string name="order_status_assigned_for_delivery">Assigned for Delivery</string>
+    <string name="order_status_delivery_in_progress">Delivery in Progress</string>
+    <string name="order_status_completed">Order Completed</string>
+
+    <string name="order_status_circle_new_order">Order\nReceived</string>
+    <string name="order_status_circle_assigned_for_collection">Assigned\nfor Collection</string>
+    <string name="order_status_circle_collection_in_progress">Collection\nin Progress</string>
+    <string name="order_status_circle_collected">Order\nCollected</string>
+    <string name="order_status_circle_cleaning_in_progress">Cleaning\nin Progress</string>
+    <string name="order_status_circle_cleaned">Cleaned</string>
+    <string name="order_status_circle_assigned_for_delivery">Assigned\nfor Delivery</string>
+    <string name="order_status_circle_delivery_in_progress">Delivery\nin Progress</string>
+    <string name="order_status_circle_completed">Order\nCompleted</string>
+
+    <string name="order_process_new_order">New Order</string>
+    <string name="order_process_assigned_for_collection">Assigned for Collection</string>
+    <string name="order_process_collection_in_progress">Collection in Progress</string>
+    <string name="order_process_collected">Collected</string>
+    <string name="order_process_cleaning">Cleaning in Progress</string>
+    <string name="order_process_cleaned">Cleaned</string>
+    <string name="order_process_assigned_for_delivery">Assigned for Delivery</string>
+    <string name="order_process_delivery">Delivery in Progress</string>
+    <string name="order_process_complete">Completed</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server. You can now use gcmsender to send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token, sending the fetched token to the server or subscribing to the PubSub topic. Please try running the sample again.</string>
+
+    <string name="select_picture">Select Picture</string>
+
+    <string name="message_order_minimum">Minimum charge to place an order Rp 50.0000</string>
+
+    <string name="message_order_new_order">Order #%1$s received. \nCollection time %2$s</string>
+    <string name="message_order_assigned_for_collection">Order #%1$s has been assigned. \nCollection time %2$s</string>
+    <string name="message_order_collection_in_progress">Order #%1$s. \nCollection is in progress</string>
+    <string name="message_order_collected">Order #%1$s has been collected</string>
+    <string name="message_order_cleaning_in_progress">Order #%1$s. \nCleaning is in progress</string>
+    <string name="message_order_cleaned">Order #%1$s. \nCleaning complete</string>
+    <string name="message_order_assigned_for_delivery">Order #%1$s has been assigned. \nDelivery time 2$s</string>
+    <string name="message_order_delivery_in_progress">Order #%1$s. \nDelivery is in progress</string>
+    <string name="message_order_completed">Order #%1$s has been completed. Thank you.</string>
+    <string name="message_order_cancelled">Order #%1$s has been cancelled.</string>
+
+    <string name="message_please_wait_sms">Please wait verification code to be received in your mobile</string>
+    <string name="message_please_wait_sms_first">Please wait verification code. You can request another SMS after 5 minutes.</string>
+
+    <string name="message_async_register">Registering your account</string>
+    <string name="message_async_authenticate">Authenticating your credential</string>
+    <string name="message_async_retrieve_available_times">Retrieving available times</string>
+    <string name="message_async_processing_order">Processing your order</string>
+    <string name="message_async_saving">Saving ...</string>
+    <string name="message_async_sending">Sending ...</string>
+    <string name="message_async_loading">Loading ...</string>
+    <string name="message_async_processing">Processing ...</string>
+    <string name="message_async_searching">Searching ...</string>
+    <string name="message_async_sending_sms">Sending verification code ...</string>
+    <string name="message_async_sign_out">Signing out ...</string>
+
+    <string name="notification_type_info">Info</string>
+    <string name="notification_type_alert">Alert</string>
+    <string name="notification_type_error">Error</string>
+</resources>

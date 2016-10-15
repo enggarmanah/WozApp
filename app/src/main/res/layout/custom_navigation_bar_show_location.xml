@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:background="@color/colorPrimary"
+    android:layout_marginRight="50dp"
+    android:padding="8dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_place_name"
+        fontPath="fonts/HelveticaLTStd-Bold.otf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Thamrin Executive Residence"
+        android:textColor="@color/colorDarkLightGrey"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_place_address"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_place_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Jl Kebun Kacang 22, Jakarta Pusat"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="13sp"/>
+
+</RelativeLayout>

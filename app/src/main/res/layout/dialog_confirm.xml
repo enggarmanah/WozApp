@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_content1_order_cancelled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_dlg_confirm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="@string/dialog_confirm"
+                android:textColor="@color/colorNotificationConfirm"
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/label_message"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="2dp"
+                android:gravity="left"
+                android:text="Confirmation text"
+                android:textColor="@color/colorCustomLightGrey"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_content2_order_order_cancelled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content1_order_cancelled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_pop_up_selector"
+            android:stateListAnimator="@null"
+            android:text="@string/button_ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_pop_up_selector"
+            android:stateListAnimator="@null"
+            android:text="@string/button_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

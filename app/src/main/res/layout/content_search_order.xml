@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/panel_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/icon_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/text_search"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_toLeftOf="@id/button_search"
+            android:background="@drawable/ed_voucher_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Search"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view_process_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/panel_search">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

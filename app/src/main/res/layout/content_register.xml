@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/panel_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_step_1"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="01"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="49sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_step_2"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="02"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="49sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_step_3"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="03"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="49sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_next"
+            fontPath="fonts/HelveticaLTStd-Roman.otf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:background="@drawable/btn_green_selector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/panel_bottom"
+        android:layout_below="@id/panel_steps"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/panel_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

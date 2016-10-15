@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom Shadow Darker Line -->
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/colorPrimary" />
+            />
+        </shape>
+    </item>
+
+    <!-- Main Color -->
+    <item android:bottom="1.5dip" android:right="1.5dp" android:top="1.5dp" android:left="1.5dp">
+        <shape android:shape="rectangle" android:dither="false" >
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/colorWhite"/>
+        </shape>
+    </item>
+
+</layer-list>

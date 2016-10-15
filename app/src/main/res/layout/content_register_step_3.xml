@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/panel_map"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLineGrey"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_pin_register"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_pin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/text_place"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="Pick a Location"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingRight="50dp"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDarkGrey"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorLineGrey"></FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/image_address_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_edit" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/button_address_ok"
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/button_ok"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="12sp"
+                android:background="@drawable/btn_square_green_selector"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image_address_edit"
+                android:layout_toLeftOf="@id/button_address_ok"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/text_address"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/place_detail"
+                    android:inputType="text"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingRight="50dp"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDarkGrey"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorLineGrey"></FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="fonts/HelveticaLTStd-Roman.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Select your residential type"
+            android:textColor="@color/colorMediumGrey"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/ll_home_building_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/button_home"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_home_grey"
+                    android:focusableInTouchMode="true"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_home"
+                    fontPath="fonts/HelveticaLTStd-Bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/place_type_home"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apartement_building_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/button_apartment"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_apartment_grey" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_apartment"
+                    fontPath="fonts/HelveticaLTStd-Bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/place_type_apartment"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_office_building_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/button_office"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_office_grey" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_office"
+                    fontPath="fonts/HelveticaLTStd-Bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/place_type_office"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom Shadow Darker Line -->
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/colorCustomLightGrey" />
+            />
+        </shape>
+    </item>
+
+    <!-- Main Color -->
+    <item android:bottom="1dip" android:right="1dp" android:top="1dp" android:left="1dp">
+        <shape android:shape="oval" android:dither="false" >
+            <solid android:color="@color/colorWhite"/>
+        </shape>
+    </item>
+
+</layer-list>

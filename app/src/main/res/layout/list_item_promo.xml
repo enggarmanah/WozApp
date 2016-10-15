@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:background="@drawable/btn_white_list_selector">
+
+    <RelativeLayout
+        android:id="@+id/panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_promo_code"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="MERDEKA"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_promo_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:textColor="@color/colorDarkLightGrey"
+            android:text="Rp. 40.000"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_start_date_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Wednesday,"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_start_date_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_start_date_day"
+                            fontPath="fonts/HelveticaLTStd-Bold.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="7"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_start_date_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/label_start_date_date"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Aug"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/button_next"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_arrow_right" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_end_date_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Sabtu,"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_end_date_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_end_date_day"
+                            fontPath="fonts/HelveticaLTStd-Bold.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="27"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_end_date_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_end_date_date"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Aug"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:textColor="@color/colorDarkGrey"
+                    android:text="Promo hari kemerdekaan Republik Indonesia"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/label_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:layout_alignParentLeft="true"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:textColor="@color/colorWhite"
+                        android:text="Active"
+                        android:textSize="13sp"
+                        android:background="@drawable/bg_square_green"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

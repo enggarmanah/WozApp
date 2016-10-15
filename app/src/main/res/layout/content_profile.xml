@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_profile"
+            android:layout_width="103.5dp"
+            android:layout_height="103.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35.5dp"
+            android:src="@drawable/icon_profile"
+            app:border_color="#bebebe"
+            app:border_width="0.7dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_name"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Profile Name"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_email"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="example@mail.com"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_mobile"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="phone number"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_edit_item_myprofile1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_edit" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_edit_item_myprofile1"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_place_address"
+        fontPath="fonts/HelveticaLTStd-Bold.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Place"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

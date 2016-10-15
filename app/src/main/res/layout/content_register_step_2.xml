@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/panel_activation_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/label_info"
+                fontPath="fonts/HelveticaLTStd-Roman.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter Verification Code"
+                android:textColor="@color/colorCustomLightGrey"
+                android:textSize="24sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/text_verification_code"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorWhite"
+                    android:maxLength="4"
+                    android:focusable="true"/>
+
+                <LinearLayout
+                    android:id="@+id/panel_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/colorWhite">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_verification_code_1"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/border_square_grey"
+                        android:gravity="center"
+                        android:hint="@string/char_hidden"
+                        android:textColorHint="@color/colorGreyText"
+                        android:inputType="number"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_verification_code_2"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_square_grey"
+                        android:gravity="center"
+                        android:hint="@string/char_hidden"
+                        android:textColorHint="@color/colorGreyText"
+                        android:inputType="number"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_verification_code_3"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_square_grey"
+                        android:gravity="center"
+                        android:hint="@string/char_hidden"
+                        android:textColorHint="@color/colorGreyText"
+                        android:inputType="number"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_verification_code_4"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_square_grey"
+                        android:gravity="center"
+                        android:hint="@string/char_hidden"
+                        android:textColorHint="@color/colorGreyText"
+                        android:inputType="number"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="fonts/HelveticaLTStd-Roman.otf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Did not receive SMS?"
+            android:textColor="@color/colorCustomLightGrey"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/panel_sms"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/button_resend_sms"
+                fontPath="fonts/HelveticaLTStd-Roman.otf"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Resend SMS"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/button_change_mobile"
+                fontPath="fonts/HelveticaLTStd-Roman.otf"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Change Phone\nNumber"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

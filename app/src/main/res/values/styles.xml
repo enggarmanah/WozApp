@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowLightStatusBar" tools:targetApi="23">true</item>-->
+    </style>
+
+    <style name="AppTheme.NoDividerActionBar" parent="@style/AppTheme">
+        <item name="actionBarStyle">@style/NoDividerActionBar</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowLightStatusBar" tools:targetApi="23">true</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="elevation">0.5dp</item>
+        <item name="android:homeAsUpIndicator">@color/colorAccent</item>
+    </style>
+
+    <style name="NoDividerActionBar" parent="@style/MyActionBar">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="colorControlNormal">@color/colorCustomGreen</item>
+        <item name="android:background">@drawable/spin_background</item>
+    </style>
+
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/spin_background</item>
+    </style>
+
+</resources>

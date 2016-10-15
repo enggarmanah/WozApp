@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:background="@drawable/btn_white_list_selector">
+
+    <RelativeLayout
+        android:id="@+id/panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_order_no"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="# 0001"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_service_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:textColor="@color/colorDarkLightGrey"
+            android:text="Rp. 40.000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_item_myorder1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_collection_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Wednesday,"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_collection_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_collection_day"
+                            fontPath="fonts/HelveticaLTStd-Bold.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="19"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_collection_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/label_collection_date"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Jul"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_collection_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/label_collection_date"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorCustomDarkGreen"
+                            android:text="09:00 - 10:00 PM"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/button_next"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_arrow_right" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_delivery_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Sabtu,"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_delivery_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_delivery_day"
+                            fontPath="fonts/HelveticaLTStd-Bold.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="23"
+                            android:textSize="20sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_delivery_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/label_delivery_date"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorDarkGrey"
+                            android:text="Jul"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/label_delivery_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/label_delivery_date"
+                            fontPath="fonts/HelveticaLTStd-Light.otf"
+                            android:textColor="@color/colorCustomDarkGreen"
+                            android:text="09:00 - 10:00 PM"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_place_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    fontPath="fonts/HelveticaLTStd-Bold.otf"
+                    android:textColor="@color/colorDarkGrey"
+                    android:text="Thamrin Executive Residence"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_place_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:textColor="@color/colorDarkGrey"
+                    android:text="Jalan Setiabudi Raya No. 9, Setia Budi, Kecamatan Setia Budi"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/label_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:layout_alignParentLeft="true"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:textColor="@color/colorWhite"
+                        android:text="Collection in Progress"
+                        android:textSize="13sp"
+                        android:background="@drawable/bg_square_green"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/label_speed_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        fontPath="fonts/HelveticaLTStd-Light.otf"
+                        android:textColor="@color/colorDarkGrey"
+                        android:text="Regular (4 Days)"
+                        android:textSize="13sp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:textColor="@color/colorDarkGrey"
+                    android:text="Kilograms (3 Kg)"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

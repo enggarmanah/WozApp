@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/rl_content1_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_close"
+            android:layout_width="13dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_cancel" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_content1_order_complete"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="THANK YOU FOR THE ORDER!"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_subtitle_content1_order_complete"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_content1_order_complete"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="We'll be processing your order soon"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content2_order_complete"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_below="@id/rl_content1_order_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_content2_order_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_order_status_1" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_content2_order_complete"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Order\nComplete"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="24sp" />
+
+        <com.liulishuo.magicprogresswidget.MagicProgressCircle
+            android:id="@+id/mpc_content1_order_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:mpc_default_color="@color/colorBackgroundProgress"
+            app:mpc_end_color="@color/colorEndProgress"
+            app:mpc_percent="1"
+            app:mpc_start_color="@color/colorStartProgress"
+            app:mpc_stroke_width="10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content3_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_content2_order_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_time" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up  :"
+                    android:textColor="@color/colorCustomLightGrey"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_pickup_content3_order_complete"
+                    fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 FEB / 9:30-10:00 AM"
+                    android:textColor="@color/colorCustomGreen"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return    :"
+                    android:textColor="@color/colorCustomLightGrey"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_return_content3_order_complete"
+                    fontPath="fonts/HelveticaLTStd-Roman.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 FEB / 9:30-10:00 AM"
+                    android:textColor="@color/colorCustomGreen"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:scaleType="fitCenter" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorCustomGreen"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_edit" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Edit"
+                    android:textColor="@color/colorCustomGreen"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content4_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content3_order_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_content4_order_complete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_pin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_address_content4_order_complete"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Apartement Tamansari, Lt. 5, No. 120\nJakarta Selatan"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content5_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content4_order_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_services" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_services_content5_order_complete"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Express (2 Days)"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_services_detail_content5_order_complete"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilogram (4 kgs) + Pieces (7 pcs)"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/button_order_details"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_arrow_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content5_order_complete"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_order_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content7_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel_order_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_payment" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payment    :"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_content7_order_complete"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Rp. 120.000"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_wallet_content7_order_complete"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="56dp"
+                android:layout_height="28dp"
+                android:background="@drawable/btn_ellipse_normal"
+                android:stateListAnimator="@null"
+                android:text="Wallet"
+                android:textAllCaps="false"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content8_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content7_order_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_user" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent will be assigned soon"
+                android:textColor="@color/colorCustomLightGrey"
+                android:textSize="10sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_call_content8_order_complete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_call" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_message_content8_order_complete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_message" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_cancel"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="56dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_cancel_order_complete_normal"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

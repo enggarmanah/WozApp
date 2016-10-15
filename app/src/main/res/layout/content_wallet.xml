@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_info_tab_content_pricing"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:text="Welcome to UrbanWash Wallet\nyour in-App Wallet ! You can\nredeem Vouchers, and go cashless"
+            android:textColor="@color/colorCustomLightGrey"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_tab_content_pricing"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_tab_content_pricing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Your UrbanWash Credit !"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_total_credits"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_tab_content_pricing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Rp. 750.000"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="38sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_wallet"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_below="@id/label_total_credits"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_wallet_green" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_top_up"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_wallet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="TOP UP YOUR WALLET"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/panel_voucher"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_top_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="20dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/text_voucher"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ed_voucher_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Input voucher code"
+                android:inputType="text"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_voucher_tab_content_pricing"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/btn_voucher_selector"
+                android:stateListAnimator="@null"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_wallet_history"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/panel_voucher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/wallet_history"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>

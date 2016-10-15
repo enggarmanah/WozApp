@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_place_type"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_home" />
+
+    <LinearLayout
+        android:id="@+id/panel_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_edit"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_edit"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/button_delete"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_item_myprofile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/image_place_type"
+        android:layout_toLeftOf="@id/panel_action"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_place_name"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/start_tap_title"
+            android:textColor="@color/colorDarkLightGrey"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_place_address"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/start_tap_title"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

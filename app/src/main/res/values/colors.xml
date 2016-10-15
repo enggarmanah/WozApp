@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#028877</color>
+    <color name="colorAccent">#23B19E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightBlue">#81BCAE</color>
+    <color name="colorBlue">#66a2eb</color>
+    <color name="colorCustomGreen2">#34B0D7</color>
+    <color name="colorCustomGreen">#03A994</color>
+    <color name="colorCustomDarkGreen">#039885</color>
+    <color name="colorTransGreen">#aa039885</color>
+    <color name="colorTransLightGreen">#22039885</color>
+    <color name="colorTransMedGreen">#99039885</color>
+    <color name="colorBorderGreen">#91d1c7</color>
+    <color name="colorCustomLightGrey">#909090</color>
+    <color name="colorCustomLightGrey1">#dedede</color>
+    <color name="colorDarkLightGrey">#6b6d6f</color>
+    <color name="colorDarkGrey">#5a5c5e</color>
+    <color name="colorDarkerGrey">#494b4d</color>
+    <color name="colorMediumGrey">#7b7e81</color>
+    <color name="colorLightGrey">#d6d6d6</color>
+    <color name="colorLineGrey">#dadada</color>
+    <color name="colorLineLightGrey">#e0e0e0</color>
+    <color name="colorLineDarkGrey">#a6a8ab</color>
+    <color name="colorCustomGreen1">#23B19E</color>
+    <color name="colorCustomLightGreen">#6DCBC2</color>
+    <color name="colorCustomLoginGreen">#6eccc5</color>
+    <color name="colorLightGreen">#eaf8f6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransluncent">#0000A4BE</color>
+    <color name="colorPurple">#ce81ff</color>
+    <color name="colorOrange">#fcc210</color>
+    <color name="colorDarkOrange">#f8bc03</color>
+    <color name="colorMagenta">#fd9c9c</color>
+    <color name="colorRed">#fc5959</color>
+    <color name="colorTransRed">#ccfc5959</color>
+    <color name="colorLightRed">#ffefef</color>
+    <color name="colorStartProgress">#08a99b</color>
+    <color name="colorEndProgress">#2ca6cd</color>
+    <color name="colorBackgroundProgress">#dbdbdb</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGreyText">#a6a8ab</color>
+
+    <color name="colorNotificationInfo">@color/colorPurple</color>
+    <color name="colorNotificationAlert">@color/colorOrange</color>
+    <color name="colorNotificationConfirm">@color/colorOrange</color>
+    <color name="colorNotificationError">@color/colorMagenta</color>
+
+    <color name="colorMapBorder">@color/colorMagenta</color>
+    <color name="colorMapCenter">@color/colorTransRed</color>
+
+
+</resources>

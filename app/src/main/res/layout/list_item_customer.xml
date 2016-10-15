@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/btn_white_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/icon_user"
+            app:border_color="#bebebe"
+            app:border_width="0.5dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_name"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_profile"
+            android:gravity="left|center_vertical"
+            android:text="Lula Kamal"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="21sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_mobile"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_name"
+            android:layout_toRightOf="@id/image_profile"
+            android:gravity="left|center_vertical"
+            android:text="082221911516"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+</LinearLayout>

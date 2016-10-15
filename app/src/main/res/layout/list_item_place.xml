@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/btn_white_selector"
+    android:gravity="center">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_place"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_apartment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_place"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_place_name"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="3dp"
+            android:text="Apartment Taman Sari Semanggi"
+            android:textColor="@color/colorDarkLightGrey"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_place_address"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Jl. Gatot Subroto Kav 7, Lt. 5, No.120, Jakarta Selatan"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

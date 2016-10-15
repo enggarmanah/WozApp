@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="56dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_icon_services_confirm" android:layout_width="46dp"
+        android:layout_height="46dp" android:orientation="horizontal"
+        android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp" android:background="@drawable/round_bordered_background"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="24dp" android:layout_height="24dp"
+            android:scaleType="fitCenter" android:src="@drawable/icon_wallet_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_confirm" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="horizontal"
+        android:layout_centerVertical="true" android:layout_toRightOf="@id/ll_icon_services_confirm"
+        android:paddingLeft="16dp" android:paddingRight="16dp"
+        android:gravity="center_vertical" android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_confirm" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="15sp"
+                android:textColor="@color/colorCustomGreen" android:text="Regular"
+                fontPath="fonts/Roboto-Light.ttf"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_weight_confirm" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey" android:text="4 Kg/s Wash"
+                fontPath="fonts/Roboto-Light.ttf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="15sp"
+                android:textColor="@color/colorWhite" android:text="Regular"
+                fontPath="fonts/Roboto-Light.ttf"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_price_confirm" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey" android:text="Rp. 200.000,00"
+                fontPath="fonts/Roboto-Light.ttf" android:gravity="right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

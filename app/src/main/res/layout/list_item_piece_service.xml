@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_description"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Celana Panjang"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_price"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Rp. 15.000"
+        android:textColor="@color/colorCustomLightGrey"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/button_plus"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_plus"
+        android:background="@drawable/btn_round_selector"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_count_new_order"
+        fontPath="fonts/HelveticaLTStd-Light.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/button_plus"
+        android:text="2"
+        android:textColor="@color/colorCustomLightGrey"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/button_minus"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/label_count_new_order"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_minus_grey"
+        android:background="@drawable/btn_round_selector"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="myorder_content_items1">
+        <item>Order Received</item>
+        <item>Pick Up</item>
+        <item>Cleaning</item>
+        <item>Delivery</item>
+        <item>Complete</item>
+    </string-array>
+
+    <string-array name="myorder_content_items2">
+        <item>Regular, Kg/s Wash, Pc/s Wash</item>
+        <item>Regular, Kg/s Wash, Pc/s Wash</item>
+        <item>Regular, Kg/s Wash, Pc/s Wash</item>
+        <item>Deluxe, Pc/s Wash, Dry Clean</item>
+        <item>Regular, Kg/s Wash, Pc/s Wash</item>
+    </string-array>
+
+    <string-array name="myorder_content_items3">
+        <item>29 Feb at 10:30 AM</item>
+        <item>29 Feb at 10:46 AM</item>
+        <item>01 Mar at 10:45 AM</item>
+        <item>02 Mar at 10:45 AM</item>
+        <item>02 Feb at 10:30 AM</item>
+    </string-array>
+
+    <string-array name="title_name">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+    </string-array>
+
+    <string-array name="setting_content_items">
+        <item>My Profile</item>
+        <item>Change Password</item>
+        <item>Promo</item>
+        <item>Terms Of Service</item>
+        <item>Privacy Policy</item>
+        <item>About Us</item>
+        <item>FAQ</item>
+        <item>Sign Out</item>
+    </string-array>
+
+</resources>

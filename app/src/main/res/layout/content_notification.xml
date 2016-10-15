@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/icon_urbanwash"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/icon_pin_green"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/icon_urbanwash">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/label_order_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="# 010001"
+                android:textColor="@color/colorCustomGreen"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/label_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorWhite"
+                android:text="Collection in Progress"
+                android:textSize="13sp"
+                android:background="@drawable/bg_square_green"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorDarkGrey"
+                android:text="Wednesday,"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/label_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/label_day"
+                android:textColor="@color/colorDarkGrey"
+                android:text="19"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/label_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_description"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/colorDarkGrey"
+                android:text="Jul"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/label_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_description"
+                android:textColor="@color/colorCustomDarkGreen"
+                android:text="09:00 - 10:00 PM"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/label_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkGrey"
+            android:text="Thamrin Executive Residence"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/label_place_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/colorDarkGrey"
+            android:text="Jalan Setiabudi Raya No. 9, Setia Budi, Kecamatan Setia Budi"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

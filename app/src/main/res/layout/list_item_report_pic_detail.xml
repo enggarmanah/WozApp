@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_list_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_order_no"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="29 Oct 2016"
+            android:textColor="@color/colorCustomGreen"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fontPath="fonts/HelveticaLTStd-Bold.otf"
+            android:textColor="@color/colorDarkLightGrey"
+            android:text="Rp. 40.000"
+            android:textSize="17sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_payment_type"
+            fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/label_order_no"
+            android:layout_toLeftOf="@id/label_value"
+            android:text="Cash"
+            android:textColor="@color/colorDarkLightGrey"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

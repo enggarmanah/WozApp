@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/panel_activation_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/name_label"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_salutation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/text_name"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorWhite"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textColorHint="@color/colorLightGrey"
+                    android:textSize="20sp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/text_email"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textColorHint="@color/colorLightGrey"
+                android:textSize="20sp"
+                android:text=""/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_label"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/text_mobile"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/mobile_hint"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textColorHint="@color/colorLightGrey"
+                android:textSize="20sp"
+                android:text=""/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/password_label"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/text_password"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textColorHint="@color/colorLightGrey"
+                android:textSize="20sp"
+                android:text=""/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_password_retype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="fonts/HelveticaLTStd-Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/password_retype_label"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/text_password_retype"
+                fontPath="fonts/HelveticaLTStd-Light.otf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/password_retype_hint"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:textColorHint="@color/colorLightGrey"
+                android:textSize="20sp"
+                android:text=""/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

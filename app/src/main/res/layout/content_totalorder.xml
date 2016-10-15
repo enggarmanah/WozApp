@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal" android:weightSum="2"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="0.75">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_total" android:layout_width="match_parent"
+            android:layout_height="49dp" android:layout_alignParentBottom="true"
+            android:textSize="15sp" android:textColor="@color/colorLightGrey"
+            android:text="Total charge" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:gravity="center_vertical|left" android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1.25">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_value_total" android:layout_width="match_parent"
+            android:layout_height="49dp" android:layout_alignParentBottom="true"
+            android:textSize="24sp" android:textColor="@color/colorCustomGreen"
+            android:text="Rp. 320.000,00" fontPath="fonts/HelveticaLTStd-Light.otf"
+            android:gravity="center_vertical|right" android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

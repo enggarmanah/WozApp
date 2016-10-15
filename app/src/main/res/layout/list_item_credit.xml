@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_list_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:id="@+id/panel_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_description"
+                    fontPath="fonts/HelveticaLTStd-Bold.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday, 13 April 2016"
+                    android:textColor="@color/colorCustomGreen"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/panel_date"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Customer"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subtitle_content1_item_myorder"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text=":"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_customer"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.75"
+                    android:text="Tania Sheila"
+                    android:textColor="@color/colorDarkLightGrey"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_below="@id/panel_customer"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Bank Name"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text=":"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_bank_name"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.75"
+                    android:text="BCA"
+                    android:textColor="@color/colorDarkLightGrey"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_account_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_below="@id/panel_bank_name"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Acc Owner Name"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text=":"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_account_owner_name"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.75"
+                    android:text="Sheila Tania"
+                    android:textColor="@color/colorDarkLightGrey"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_below="@id/panel_account_owner_name"
+                android:weightSum="10"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Amount"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text=":"
+                    android:textColor="@color/colorDarkerGrey"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/label_amount"
+                    fontPath="fonts/HelveticaLTStd-Light.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.75"
+                    android:text="Rp. 100.000"
+                    android:textColor="@color/colorDarkLightGrey"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="left|center_vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/button_approve"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_check"
+                android:background="@drawable/btn_round_selector"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

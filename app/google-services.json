@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "91033046269",
+    "firebase_url": "https://project-3419620684716107167.firebaseio.com",
+    "project_id": "project-3419620684716107167",
+    "storage_bucket": "project-3419620684716107167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91033046269:android:1a182f22b17dcbea",
+        "android_client_info": {
+          "package_name": "id.urbanwash.wozapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91033046269-klpjdr74g2t7gjv1bi0voajnemle6odd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADUeswv-hXLQUwh4IdU9eO_T9xmqoKxVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
