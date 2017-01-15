@@ -70,7 +70,6 @@ public class PieceServiceAdapter extends RecyclerView.Adapter<PieceServiceAdapte
             count = orderProductItemBean.getCount();
         }
 
-
         OrderBean orderBean = Session.getOrder();
         float price = 0;
 
@@ -85,6 +84,12 @@ public class PieceServiceAdapter extends RecyclerView.Adapter<PieceServiceAdapte
         }
 
         holder.descriptionLabel.setText(laundryItemBean.getName());
+
+        if (price == 0) {
+            holder.priceLabel.setText(mAppCompatActivity.getString(R.string.service_min_4_days));
+            return;
+        }
+
         holder.priceLabel.setText(CommonUtil.formatCurrency(price));
         holder.countLabel.setText(CommonUtil.formatString(count));
 

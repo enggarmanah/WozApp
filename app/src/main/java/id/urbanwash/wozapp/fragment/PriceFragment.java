@@ -62,9 +62,9 @@ public class PriceFragment extends Fragment {
         this.fragmentTabHost.addTab(
                 setIndicator(this.appCompatActivity, this.fragmentTabHost.newTabSpec(getString(R.string.product_type_piece)), R.drawable.custom_tab_widget_backgroung),
                 PriceContentFragment.class, pieceBundle);
-        this.fragmentTabHost.addTab(
+        /*this.fragmentTabHost.addTab(
                 setIndicator(this.appCompatActivity, this.fragmentTabHost.newTabSpec(getString(R.string.product_type_dryclean)), R.drawable.custom_tab_widget_backgroung),
-                PriceContentFragment.class, dryCleanBundle);
+                PriceContentFragment.class, dryCleanBundle);*/
 
         this.rootView.setAnimation(Utility.AnimationUtility.setAnimationOnView(this.appCompatActivity));
 

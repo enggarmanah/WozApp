@@ -95,6 +95,9 @@
 
     <string name="empty_order">Empty Order</string>
 
+    <string name="service_not_available">Not Available</string>
+    <string name="service_min_4_days">Min. 4 Days</string>
+
     <string name="transporter_will_be_assigned">To be assigned soon</string>
     <string name="assign_transporter_collection">Assign transporter for collection</string>
     <string name="assign_transporter_delivery">Assign transporter for return</string>
@@ -130,6 +133,7 @@
 
     <string name="hint_promo_code">input promo code</string>
     <string name="order_promo">Promo:</string>
+    <string name="order_promo_min_order">Minimal Order %1$s</string>
     <string name="promo_enter_code">Enter promo code</string>
 
     <string name="promo_code">Code</string>
@@ -288,6 +292,7 @@
     <string name="alert_minimum_order">Minimum order is %1$s</string>
     <string name="alert_insufficient_credit_balance">Insufficient balance, please top up your wallet</string>
     <string name="alert_no_available_delivery_time">Unfortunately our return schedule for this date is full</string>
+    <string name="alert_minimum_processing_time_for_product">Minimum processing time for %1$s is 4 days</string>
     <string name="alert_message_required">Message is required</string>
     <string name="alert_code_required">Code is required</string>
     <string name="alert_description_required">Description is required</string>
@@ -317,7 +322,7 @@
     <string name="error_change_delivery_no_longer_allowed">Sorry, change on return date is no longer allowed</string>
     <string name="error_insufficient_wallet_balance">Insufficient wallet balance</string>
     <string name="error_no_available_time">No available time</string>
-    <string name="error_invalid_promo_code">Invalid promo code</string>
+    <string name="error_invalid_promo_code">Invalid promo code or promo period is already over</string>
     <string name="error_reset_password">Email is not registered</string>
     <string name="error_change_password_old_password_incorrect">Incorrect old password</string>
 
@@ -400,7 +405,7 @@
 
     <string name="select_picture">Select Picture</string>
 
-    <string name="message_order_minimum">Minimum charge to place an order Rp 50.0000</string>
+    <string name="message_order_minimum">Minimum charge to place an order Rp 20.0000</string>
 
     <string name="message_order_new_order">Order #%1$s received. \nCollection time %2$s</string>
     <string name="message_order_assigned_for_collection">Order #%1$s has been assigned. \nCollection time %2$s</string>

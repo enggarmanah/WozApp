@@ -10,7 +10,7 @@
     android:gravity="center">
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/label_description"
+        android:id="@+id/label_date"
         fontPath="fonts/HelveticaLTStd-Light.otf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         fontPath="fonts/HelveticaLTStd-Light.otf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/label_description"
+        android:layout_toRightOf="@id/label_date"
         android:layout_toLeftOf="@id/label_amount"
         android:layout_marginLeft="10dp"
         android:text="Order #010010"

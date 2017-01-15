@@ -57,7 +57,7 @@ public class WalletHistoryAdapter extends RecyclerView.Adapter<WalletHistoryAdap
             
             super(view);
 
-            dateLabel = (AppCompatTextView) view.findViewById(R.id.label_description);
+            dateLabel = (AppCompatTextView) view.findViewById(R.id.label_date);
             descriptionLabel = (AppCompatTextView) view.findViewById(R.id.label_description);
             amountLabel = (AppCompatTextView) view.findViewById(R.id.label_amount);
         }

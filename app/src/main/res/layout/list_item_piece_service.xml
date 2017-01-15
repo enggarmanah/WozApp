@@ -34,7 +34,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/icon_plus"
+        android:src="@drawable/icon_plus_grey"
         android:background="@drawable/btn_round_selector"/>
 
     <android.support.v7.widget.AppCompatTextView
@@ -45,7 +45,7 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="10dp"
         android:layout_toLeftOf="@id/button_plus"
-        android:text="2"
+        android:text="0"
         android:textColor="@color/colorCustomLightGrey"
         android:textSize="15sp" />
 

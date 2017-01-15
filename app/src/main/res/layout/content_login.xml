@@ -38,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/btn_round_corner_green_normal"
                 android:ems="10"
-                android:hint="@string/user_name"
+                android:hint="@string/email_label"
                 android:inputType="text"
                 android:textAlignment="center"
                 android:textColor="@color/colorWhite"
@@ -133,7 +133,8 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="40dp">
+            android:layout_marginBottom="40dp"
+            android:visibility="invisible">
 
             <android.support.v7.widget.AppCompatTextView
                 fontPath="fonts/HelveticaLTStd-Light.otf"

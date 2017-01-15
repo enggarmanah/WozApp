@@ -9,7 +9,7 @@ public class Constant {
     public static final String NEW_LINE_STRING = "\n";
     public static final String SPACE_STRING = " ";
 
-    public static final String URBANWASH_CONTACT = "082221911516";
+    public static final String URBANWASH_CONTACT = "081280563958";
 
     public static final String DEVICE_TYPE_ANDROID = "ANDROID";
     public static final String DEVICE_TYPE_IOS = "IOS";
@@ -237,6 +237,7 @@ public class Constant {
     public static final String ERROR_APP_UPDATE_REQUIRED = "ERR003";
     public static final String ERROR_SYSTEM_MAINTENANCE = "ERR004";
     public static final String ERROR_REGISTER_CUSTOMER_EXIST = "ERR005";
+    public static final String ERROR_EMAIL_HAS_BEEN_REGISTERED = "ERR007";
     public static final String ERROR_AUTHENTICATION_FAILED = "ERR006";
     public static final String ERROR_LOCATION_NOT_WITHIN_SERVICE_AREA = "ERR008";
     public static final String ERROR_CHANGE_DELIVERY_NO_LONGER_ALLOWED = "ERR009";

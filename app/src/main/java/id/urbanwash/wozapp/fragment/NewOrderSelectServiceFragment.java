@@ -74,6 +74,7 @@ public class NewOrderSelectServiceFragment extends Fragment {
 
     private LinearLayout mPromoPanel;
     private AppCompatTextView mPromoCodeLabel;
+    private AppCompatTextView mPromoCodeInfoLabel;
     private AppCompatTextView mPromoValueLabel;
 
     private AppCompatTextView mTotalChargeLabel;
@@ -149,6 +150,7 @@ public class NewOrderSelectServiceFragment extends Fragment {
 
         mPromoPanel = (LinearLayout) rootView.findViewById(R.id.panel_promo);
         mPromoCodeLabel = (AppCompatTextView) rootView.findViewById(R.id.label_promo_code);
+        mPromoCodeInfoLabel = (AppCompatTextView) rootView.findViewById(R.id.label_promo_code_info);
         mPromoValueLabel = (AppCompatTextView) rootView.findViewById(R.id.label_promo_value);
 
         mTotalChargeLabel = (AppCompatTextView) rootView.findViewById(R.id.label_total_charge);
@@ -183,7 +185,7 @@ public class NewOrderSelectServiceFragment extends Fragment {
 
         if (mAppCompatActivity instanceof NewOrderActivity) {
 
-            initDeliveryDate();
+            //initDeliveryDate();
         }
     }
 
@@ -326,9 +328,9 @@ public class NewOrderSelectServiceFragment extends Fragment {
 
             if (promoBean != null) {
 
-                if (orderProductTotalCharge >= promoBean.getMinOrder()) {
+                float discount = 0f;
 
-                    float discount = 0f;
+                if (orderProductTotalCharge >= promoBean.getMinOrder()) {
 
                     if (Constant.PROMO_TYPE_AMOUNT.equals(promoBean.getType())) {
                         discount = promoBean.getValue();
@@ -338,12 +340,61 @@ public class NewOrderSelectServiceFragment extends Fragment {
                     }
 
                     orderProductTotalCharge -= discount;
-                    mOrderBean.setDiscount(discount);
                 }
+
+                mOrderBean.setDiscount(discount);
             }
 
             mOrderBean.setTotalCharge(orderProductTotalCharge);
         }
+    }
+
+    private boolean isSpeedTypeNotApplicable(String speedType) {
+
+        List<OrderProductBean> orderProductBeans = mOrderBean.getOrderProducts();
+
+        boolean isSpeedTypeNotApplicable = false;
+
+        if (orderProductBeans != null) {
+
+            for (OrderProductBean orderProductBean : orderProductBeans) {
+
+                float price = 0;
+                ProductBean productBean = Session.getProduct(orderProductBean.getProduct().getCode());
+
+                if (!Constant.PRODUCT_KG_WASH_IRON.equals(productBean.getCode())) {
+
+                    List<OrderProductItemBean> orderProductItemBeans = orderProductBean.getOrderProductItems();
+
+                    if (orderProductItemBeans != null) {
+
+                        for (OrderProductItemBean orderProductItemBean : orderProductItemBeans) {
+
+                            price = 0;
+                            LaundryItemBean laundryItemBean = productBean.getLaundryItem(orderProductItemBean.getLaundryItem().getCode());
+
+                            if (Constant.SPEED_TYPE_REGULAR.equals(speedType)) {
+                                price = laundryItemBean.getPrice1();
+
+                            } else if (Constant.SPEED_TYPE_EXPRESS.equals(speedType)) {
+                                price = laundryItemBean.getPrice2();
+
+                            } else if (Constant.SPEED_TYPE_DELUXE.equals(speedType)) {
+                                price = laundryItemBean.getPrice3();
+                            }
+
+                            if (price == 0) {
+
+                                NotificationUtil.showAlertMessage(mAppCompatActivity, getString(R.string.alert_minimum_processing_time_for_product, laundryItemBean.getName()));
+                                isSpeedTypeNotApplicable = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return isSpeedTypeNotApplicable;
     }
 
     private void refreshServices() {
@@ -412,12 +463,23 @@ public class NewOrderSelectServiceFragment extends Fragment {
 
     private void refreshPromo() {
 
+        mPromoCodeInfoLabel.setVisibility(View.GONE);
         PromoBean promoBean = mOrderBean.getPromo();
 
         if (promoBean != null) {
-            mPromoCodeLabel.setText(getString(R.string.order_promo) + Constant.SPACE_STRING + promoBean.getCode());
+
+            String promoCode = getString(R.string.order_promo) + Constant.SPACE_STRING + promoBean.getCode();
+            mPromoCodeLabel.setText(promoCode);
+
+            if (promoBean.getMinOrder() > 0) {
+                String promoCodeInfo = getString(R.string.order_promo_min_order, CommonUtil.formatCurrency(promoBean.getMinOrder()));
+                mPromoCodeInfoLabel.setText(promoCodeInfo);
+                mPromoCodeInfoLabel.setVisibility(View.VISIBLE);
+            }
+
             mPromoValueLabel.setText("-" + Constant.SPACE_STRING + Constant.SPACE_STRING + CommonUtil.formatCurrency(mOrderBean.getDiscount()));
             mPromoValueLabel.setVisibility(View.VISIBLE);
+
         } else {
             mPromoCodeLabel.setText(getString(R.string.promo_enter_code));
             mPromoValueLabel.setVisibility(View.GONE);
@@ -479,6 +541,10 @@ public class NewOrderSelectServiceFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                if (isSpeedTypeNotApplicable(Constant.SPEED_TYPE_EXPRESS)) {
+                    return;
+                }
+
                 mSpeedType = Constant.SPEED_TYPE_EXPRESS;
 
                 if (Session.getDeliveryDateTimes() == null) {
@@ -525,6 +591,10 @@ public class NewOrderSelectServiceFragment extends Fragment {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (isSpeedTypeNotApplicable(Constant.SPEED_TYPE_DELUXE)) {
+                    return;
+                }
 
                 mSpeedType = Constant.SPEED_TYPE_DELUXE;
 

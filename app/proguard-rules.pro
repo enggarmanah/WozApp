@@ -16,6 +16,8 @@
 #   public *;
 #}
 
+-dontobfuscate
+
 -dontwarn com.android.support.**
 -dontwarn de.hdodenhof.**
 -dontwarn org.codehaus.mojo.animal_sniffer.**
@@ -24,4 +26,11 @@
 -dontwarn com.wdullaer.**
 -dontwarn uk.co.chrisjenx.**
 -dontwarn org.apache.lang.**
+-dontwarn okhttp3.**
+-dontwarn org.greenrobot.**
+-dontwarn com.fasterxml.**
 
+-keepattributes *Annotation*
+-keepattributes EnclosingMethod
+
+-printmapping mapping.txt

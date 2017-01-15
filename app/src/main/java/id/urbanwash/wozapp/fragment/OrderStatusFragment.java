@@ -33,6 +33,8 @@ import id.urbanwash.wozapp.util.CodeUtil;
 import id.urbanwash.wozapp.util.CommonUtil;
 import id.urbanwash.wozapp.util.ImageManager;
 
+import static id.urbanwash.wozapp.Constant.URBANWASH_CONTACT;
+
 /**
  * Created by apridosandyasa on 3/7/16.
  */
@@ -446,7 +448,7 @@ public class OrderStatusFragment extends Fragment {
                 if (employeeBean != null) {
                     mListener.onCall(employeeBean.getName(), employeeBean.getImage(), employeeBean.getMobile());
                 } else {
-                    mListener.onCall(null, null, null);
+                    mListener.onCall(null, null, URBANWASH_CONTACT);
                 }
             }
         };
@@ -461,7 +463,7 @@ public class OrderStatusFragment extends Fragment {
                 if (employeeBean != null) {
                     mListener.onSms(employeeBean.getName(), employeeBean.getImage(), employeeBean.getMobile());
                 } else {
-                    mListener.onSms(null, null, null);
+                    mListener.onSms(null, null, URBANWASH_CONTACT);
                 }
             }
         };
