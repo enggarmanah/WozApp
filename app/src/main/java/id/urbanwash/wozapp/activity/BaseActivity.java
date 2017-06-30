@@ -271,7 +271,7 @@ public class BaseActivity extends AppCompatActivity implements HttpAsyncCommonLi
         Drawable upArrow = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 48, 48, true));
         upArrow.setColorFilter(ContextCompat.getColor(this, R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);*/
 
-        Drawable upArrow = ContextCompat.getDrawable(this, R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        Drawable upArrow = ContextCompat.getDrawable(this, R.drawable.icon_back_alpha);
         upArrow.setColorFilter(ContextCompat.getColor(this, R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
 
         return upArrow;

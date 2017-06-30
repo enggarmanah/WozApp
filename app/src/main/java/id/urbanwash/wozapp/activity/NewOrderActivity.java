@@ -326,7 +326,7 @@ public class NewOrderActivity extends BaseActivity implements NewOrderListener {
     }
 
     private Drawable changeBackArrowColor() {
-        Drawable upArrow = ContextCompat.getDrawable(this, R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        Drawable upArrow = ContextCompat.getDrawable(this, R.drawable.icon_back_alpha);
         upArrow.setColorFilter(ContextCompat.getColor(this, R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
         return upArrow;
     }

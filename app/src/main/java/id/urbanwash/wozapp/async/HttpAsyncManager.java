@@ -15,9 +15,12 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
@@ -104,7 +107,11 @@ public class HttpAsyncManager {
             e.printStackTrace();
         }
 
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm z");
+
         mapper = new ObjectMapper();
+        mapper.setDateFormat(df);
+        mapper.setTimeZone(TimeZone.getTimeZone("GMT+7"));
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
@@ -121,7 +128,11 @@ public class HttpAsyncManager {
             e.printStackTrace();
         }
 
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm z");
+
         mapper = new ObjectMapper();
+        mapper.setDateFormat(df);
+        mapper.setTimeZone(TimeZone.getTimeZone("GMT+7"));
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
@@ -1301,8 +1312,7 @@ public class HttpAsyncManager {
         try {
 
             final OutputStream out = new ByteArrayOutputStream();
-            final ObjectMapper objectMapper = new ObjectMapper();
-            final ObjectWriter writer = objectMapper.writer().withDefaultPrettyPrinter();
+            final ObjectWriter writer = mapper.writer().withDefaultPrettyPrinter();
 
             writer.writeValue(out, object);
 
