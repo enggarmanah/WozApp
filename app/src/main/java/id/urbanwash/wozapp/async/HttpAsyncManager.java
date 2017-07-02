@@ -1354,7 +1354,9 @@ public class HttpAsyncManager {
         } else if (Constant.ERROR_AUTHENTICATION_FAILED.equals(code)) {
             errorDesc = mContext.getString(R.string.error_authentication_failed);
 
-        } else if (Constant.ERROR_REGISTER_CUSTOMER_EXIST.equals(code)) {
+        } else if (Constant.ERROR_REGISTER_CUSTOMER_EXIST.equals(code) ||
+            Constant.ERROR_EMAIL_HAS_BEEN_REGISTERED.equals(code)) {
+
             errorDesc = mContext.getString(R.string.error_register_customer_exist);
 
         } else if (Constant.ERROR_LOCATION_NOT_WITHIN_SERVICE_AREA.equals(code)) {
